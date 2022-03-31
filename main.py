@@ -3,7 +3,7 @@ import requests
 url_api = 'https://pokeapi.co/api/v2/pokemon/'
 
 def main(): 
-    pokemon_name = input('name el nombre del pokemon> ') 
+    pokemon_name = input('Dame el nombre del pokemon> ') 
     pokemon_data_url = url_api + pokemon_name 
     data = get_pokemon_data(pokemon_data_url)
     print(data)
